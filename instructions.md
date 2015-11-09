@@ -1,6 +1,6 @@
 ## Assignment 9
 ### Writing scripts in Python
-**due at 12 noon on 2015-11-10** via Github
+**due at 12 noon on 2015-11-11** via Github
 
 ## Instructions
 
