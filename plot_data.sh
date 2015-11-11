@@ -7,15 +7,15 @@ def main():
 	import pandas as pd, matplotlib.pyplot as plt, sys 
 	
 	#set arguments
-	data_to_plot = sys.argv[1]
-	savepath = sys.argv[2]
+	input_file = sys.argv[1]
+	output_file= sys.argv[2]
 	
 	#load data
-	data = pd.read_csv('data_to_plot', delimiter = ',')
+	data = pd.read_csv('input_file', delimiter = ',')
 	
 	#plot data and save fig
 	plt.plot(data)
-	plt.savefig(savepath)
+	plt.savefig(output_file)
 	plt.show()
 	
 main()
