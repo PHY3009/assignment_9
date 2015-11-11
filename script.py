@@ -20,11 +20,16 @@ def main ():
 	
 def process(data):
 	#Defining what to do with the dataframe
-	out = data.mean(axis = 1)
-	return out
+	data.mean(axis = 1)
+	#return(out)
 	
+def plot(plot, data):	
+
+	plt.plot(plot)
 	#Saving the figure 
 	plt.savefig(savename)
+	
+	plt.show()
 	
 
 main()
