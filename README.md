@@ -1,8 +1,9 @@
 
-This script loads a dataset into python and then plots and saves a figure.
+This script loads a dataset into python and then plots and saves all data in a figure.
 
 To use the script you can call it from the Shell by typing:
-python <name of the script> <input_file> <output_file>
+
+python 'name of the script' 'input_file' 'output_file'
 
 The name of the script is script.py, the input_file is a dataset that you wish to plot a figure from. The input file must be in a 
 simple text file format (.csv or .txt), with the values seperated by commas, in order for it to load in the script. 
