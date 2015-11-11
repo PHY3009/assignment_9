@@ -7,3 +7,13 @@ import pandas as pd
 import sys
 import matplotlib as plt
 
+def main():
+	
+	#Defining the variables
+	filename = sys.argv[1]
+	savename = sys.argv[2]
+	
+	#load the data using panadas
+	data = pd.read_csv(filename, delimiter=',')
+	
+	
