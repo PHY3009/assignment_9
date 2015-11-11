@@ -7,6 +7,7 @@ Usage:
 python plot.py input_file output_file
 
 input_file = The name of the input file containing data
+
 output_file = The name of the file that the user wants to save the figure in. This creates a new file containing the figure, and should not be the name of an existing file. 
 
 Data format:
