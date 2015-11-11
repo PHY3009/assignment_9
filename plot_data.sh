@@ -11,7 +11,7 @@ def main():
 	output_file= sys.argv[2]
 	
 	#load data
-	data = pd.read_csv('input_file', delimiter = ',')
+	data = pd.read_csv(input_file, delimiter = ',')
 	
 	#plot data and save fig
 	plt.plot(data)
