@@ -18,18 +18,18 @@ def main ():
 	# call process to get values from data
 	values = process(command, data)
 	
+	#Saving the figure 
+	plt.savefig(savename)
+	
 def process(command, data):
 	#Defining what to do with the dataframe
 	command = data.mean(axis = 1)
 	
 	
-def plot(plot, data):	
-
-	plot = plt.plot(data)
-	#Saving the figure 
-	plot = plt.savefig(savename)
+def plot(data):	
 	
-	plt.show()
+	plot = plt.plot(dataframe.mean(axis=1))
+	return plot 
 	
 
 main()
