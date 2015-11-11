@@ -1,0 +1,27 @@
+#A function to take a dataset and plot it from the command line
+import pandas as pd
+import sys
+import matplotlib.pyplot as plt
+
+def main():
+	#assign variables
+	save_path = sys.argv[2]
+	filename = sys.argv[1]
+	#load the data 
+	data = pd.read_csv(filename, delimiter = ',')
+	
+	plot(data['Most people can be trusted'], save_path)
+
+
+	
+
+def plot(plot_data, savename):
+	#plot data
+		 
+	plt.barh(plot_data.index, plot_data)
+	#show plot
+	plt.savefig(savename)
+	plt.show()
+        
+main()
+
