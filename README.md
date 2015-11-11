@@ -1,5 +1,5 @@
 
-This script loads a dataset into python and then plots and saves all data in a figure.
+This script loads a dataset into python and then plots and saves a figure of the mean of the data in each column. 
 
 To use the script you can call it from the Shell by typing:
 
