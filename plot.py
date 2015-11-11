@@ -8,7 +8,6 @@ def main():
 	#assign variables
 	action = sys.argv[1]
 	filename = sys.argv[2]
-	save_path = sys.argv[3]
 
 	#load the data
 	data = pd.read_csv(filename, delimiter = ',')
