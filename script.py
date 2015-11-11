@@ -21,13 +21,13 @@ def main ():
 	#output data
 	print(values)
 	
-	#Saving the figure 
-	plt.savefig(savename)
-	
 def process(data):
 	#Defining what to do with the dataframe
 	out = data.mean(axis = 1)
 	return out
+	
+	#Saving the figure 
+	plt.savefig(savename)
 		
 #def plot(plot_data, savename):
 	#plot data
