@@ -1,31 +1,35 @@
 #A function to take a dataset and plot it from the command line
+'''Inputs data to be plotted and desired name of output file. Outputs figure'''
+#importing libraries
 import pandas as pd
 import sys
 import matplotlib.pyplot as plt
-
+#main function
 def main():
-	#assign variables
-	save_path = sys.argv[2]
-	filename = sys.argv[1]
-	#load the data 
-	data = pd.read_csv(filename, delimiter = ',')
+	#assigning variables
+	output_file = sys.argv[2]
+	input_file = sys.argv[1]
+	#loading the data 
+	data = pd.read_csv(input_file, delimiter = ',')
 	
-	plot(data['Most people can be trusted'], save_path)
+	plot(data['Most people can be trusted'], output_file)
 
 
 	
 
 def plot(plot_data, savename):
-	#plot data
+	#ploting data
 		 
 	plt.barh(plot_data.index, plot_data)
+	#adding axis labels
 	plt.ylabel('Country')
 	plt.xlabel('% Who Answered that most people can be trusted')
 
 	
-	#show plot
+	#saving plot
 	plt.savefig(savename)
 	plt.show()
+	
 	
         
 main()
