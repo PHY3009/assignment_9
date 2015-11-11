@@ -16,18 +16,18 @@ def main ():
 	data = pd.read_csv(filename, delimiter=',')
 
 	# call process to get values from data
-	values = process(data)
+	values = process(command, data)
 	
-def process(data):
+def process(command, data):
 	#Defining what to do with the dataframe
-	data.mean(axis = 1)
-	#return(out)
+	command = data.mean(axis = 1)
+	
 	
 def plot(plot, data):	
 
-	plt.plot(plot)
+	plot = plt.plot(data)
 	#Saving the figure 
-	plt.savefig(savename)
+	plot = plt.savefig(savename)
 	
 	plt.show()
 	
