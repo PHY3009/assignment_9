@@ -5,6 +5,7 @@
 # import libraries
 import pandas as pd
 import sys
+import matplotlib as plt
 
 def main ():
 # assign variables
