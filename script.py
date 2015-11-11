@@ -17,9 +17,6 @@ def main ():
 
 	# call process to get values from data
 	values = process(data)
-
-	#output data
-	print(values)
 	
 def process(data):
 	#Defining what to do with the dataframe
@@ -28,14 +25,6 @@ def process(data):
 	
 	#Saving the figure 
 	plt.savefig(savename)
-		
-#def plot(plot_data, savename):
-	#plot data
-	#plt.plot(plot_data)
-	#save plot 
-	#plt.savefig(savename)
-	#show plot
-	#plt.show()
 	
 
 main()
