@@ -1,6 +1,6 @@
 plot_data.sh
 
-This script is executed by typing python plot_data.sh (data name) (save name) into the 
+This script is executed by typing python plot_data.sh (input data) (output data) into the 
 terminal that is opened to the same area as the data. The bracket inputs are the two 
 arguments the script takes. The script is headed with a def main(): which holds 
 the commands it executes. First the scipt imports the libraries. Next it defines the 
