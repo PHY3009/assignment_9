@@ -19,9 +19,14 @@ def plot(plot_data, savename):
 	#plot data
 		 
 	plt.barh(plot_data.index, plot_data)
+	plt.ylabel('Country')
+	plt.xlabel('% Who Answered that most people can be trusted')
+
+	
 	#show plot
 	plt.savefig(savename)
 	plt.show()
+	
         
 main()
 
