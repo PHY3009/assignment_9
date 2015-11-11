@@ -15,7 +15,7 @@ savename = sys.argv[2]
 data = pd.read_csv(filename, delimiter=',')	
 	
 #Plotting the mean of each column of the data 
-plt.plot(data.mean(axis=1)
+plt.plot(data)
 	
 #Saving the plot
 plt.savefig(savename)
