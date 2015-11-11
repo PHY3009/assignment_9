@@ -5,27 +5,17 @@
 # import libraries
 import pandas as pd
 import sys
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
-def main():
+#Defining the variables
+filename = sys.argv[1]
+savename = sys.argv[2]
 	
-	#Defining the variables
-	filename = sys.argv[1]
-	savename = sys.argv[2]
+#load the data using panadas
+data = pd.read_csv(filename, delimiter=',')	
 	
-	#load the data using panadas
-	data = pd.read_csv(filename, delimiter=',')
-
+#Plotting the mean of each column of the data 
+plt.plot(data.mean(axis=1)
 	
-def plot(data):
-
-	#Plotting the mean of each column of the data 
-	plt.plot(data.mean(axis=1))
-	
-	#Saving the plot
-	plt.savefig(savename)
-	
-	plt.show()
-
-	
-main()
+#Saving the plot
+plt.savefig(savename)
